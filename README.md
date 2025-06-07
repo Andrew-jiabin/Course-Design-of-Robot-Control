@@ -18,7 +18,7 @@
 | 控制策略         | 创新特性                          | 核心目标                     |
 |------------------|-----------------------------------|------------------------------|
 | 传统PID          | 固定增益参数                      | 基础位置跟踪                 |
-| PID+前馈控制     | 加入动力学模型补偿项              | 抑制非线性耦合影响           |
+| PID+前馈控制     | 加入动力学模型补偿项              | 抑制非线性影响           |
 | PID+自适应控制   | 分段线性增益调节                  | 平衡响应速度与稳态精度       |
 | PID+前馈+自适应  | 复合补偿策略                      | 综合性能优化                 |
 
@@ -45,7 +45,7 @@
 | `main_test.m`                     | 阶跃响应测试主程序                           |
 | `frequency_response_phantom.m`    | 频率响应特性分析脚本                         |
 | `analyzeStepResponse.m`           | 阶跃响应指标计算工具（超调量/调整时间等）     |
-| `\plant_models\phantom_dynamics.m` | 机器人动力学模型实现                         |
+| `\plant_models\phantom_dynamics.m` | 机器人动力学模型的简化实现                         |
 | `\controllers\adaptive_pid.m`      | 自适应PID控制器算法                         |
 | `\controllers\adaptive_pid_ff.m`   | 前馈补偿+自适应PID复合控制器                |
 | `\controllers\pid_controller.m`    | 传统PID控制器基线实现                       |
