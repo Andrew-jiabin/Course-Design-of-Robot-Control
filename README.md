@@ -3,10 +3,6 @@
 ## 📌 项目简介
 本项目针对Phantom Omni三自由度机器人（POR）开展控制算法研究，通过构建精确的运动学/动力学模型，设计并验证了四种改进型PID控制策略，从时域和频域维度验证了控制方法的有效性。
 
-<center>
-![图片](https://eb118-file.cdn.bcebos.com/assistant/20250607/db1458e017f24e13b6599668b62dd359_19690570112?x-bce-process=style/i_e)
-<div style="font-size:12px; color:#666">项目结构示意图</div>
-</center>
 
 ## 🔬 研究内容
 
