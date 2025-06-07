@@ -38,10 +38,11 @@ $$ u_{ff} = \underbrace{\hat{M}(q)\ddot{q}_d}_{\text{惯性补偿}} + \underbrac
 $$ 
 K_p = 
 \begin{cases} 
-K_{p\_{max}} = 8.5 & e > \epsilon_1 = 0.1 \text{rad} \\
-K_{p\_{min}} = 2.0 & e < \epsilon_2 = 0.01 \text{rad}
+K_{p\_{\text{max}}} = 8.5 & e > \epsilon_1 = 0.1\ \text{rad} \\
+K_{p\_{\text{min}}} = 2.0 & e < \epsilon_2 = 0.01\ \text{rad}
 \end{cases}
 $$
+ 
  
 
 ## 📂 建模与测试文件
