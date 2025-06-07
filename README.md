@@ -41,20 +41,20 @@
    $$
    实现快速响应（上升时间缩短72.5%）与稳态精度的双重优化
 
-## 📂 文件结构
-.
-├── simulation.slx # Simulink主模型文件
-├── phantom_omni_sfun.m # S-Function建模核心
-├── main_test.m # 阶跃响应测试脚本
-├── frequency_response_phantom.m # 频域分析脚本
-├── analyzeStepResponse.m # 响应指标计算
-├── plant_models/
-│ └── phantom_dynamics.m # 机器人动力学模型
-└── controllers/
-├── adaptive_pid.m # 自适应PID控制器
-├── adaptive_pid_ff.m # 前馈+自适应PID
-├── pid_controller.m # 传统PID
-└── pid_ff.m # 前馈+传统PID
+## 📂 建模与测试文件
+
+| 文件路径                          | 功能描述                                     |
+|-----------------------------------|--------------------------------------------|
+| `simulation.slx`                  | Simulink主建模文件（基于`phantom_omni_sfun.m`）|
+| `phantom_omni_sfun.m`             | Simulink S-Function核心建模文件（集成PID控制与POR动力学）|
+| `main_test.m`                     | 阶跃响应测试主程序                           |
+| `frequency_response_phantom.m`    | 频率响应特性分析脚本                         |
+| `analyzeStepResponse.m`           | 阶跃响应指标计算工具（超调量/调整时间等）     |
+| `\plant_models\phantom_dynamics.m` | 机器人动力学模型实现                         |
+| `\controllers\adaptive_pid.m`      | 自适应PID控制器算法                         |
+| `\controllers\adaptive_pid_ff.m`   | 前馈补偿+自适应PID复合控制器                |
+| `\controllers\pid_controller.m`    | 传统PID控制器基线实现                       |
+| `\controllers\pid_ff.m`            | 前馈补偿+传统PID控制器                      |
 
 ## 📊 关键数据
 
